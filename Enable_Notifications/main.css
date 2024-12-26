@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+    
+
+}
+.sec-1{
+    display: flex;
+    background-color: #121737;
+    padding: 35px;
+    color: white;
+    gap: 1.5rem;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 10px 3px rgb(215, 210, 210);
+}
+.cancel svg{
+    position: absolute;
+    top: 20px;
+} 
+.monitor svg{
+    height: 40px;
+    width: 40px;
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.first-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.enable-1 button{
+    background-color: #4290f4;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.learn-1 button{
+    background-color: unset;
+    border: none;
+    color: rgb(64, 99, 239);
+    font-weight: bold;
+}
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgb(215, 210, 210);
+}
+.cancel-2 svg{
+    position: absolute;
+    
+
+}
+.bell{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(209, 205, 205);
+    border-radius: 50px;
+    text-align: center;
+}
+.bell svg{
+    height: 80px;
+    width: 80px;
+    
+}
+.condition-2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.second-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+.enable-2 button{
+    background-color: #4290f4;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.learn-2 button{
+    border: none;
+    color: #4290f4;
+    background-color: white;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 0px 0px 5px 2px #4290f4;
+    border: none;
+}
+@media only screen and (max-width:500px){
+    main{
+        width: 90%;
+    }
+}
+
