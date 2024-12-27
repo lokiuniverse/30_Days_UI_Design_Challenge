@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    gap: 1.5rem;
+    width: 400px;
+    box-shadow: 5px 5px black;
+}
+.give{
+    font-size: 25px;
+    font-style: informal ;
+}
+.thoughts{
+    font-size: 18px;
+}
+#message{
+    padding: 5px 100px 40px 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid gray;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+#box-1{
+    height: 20px;
+    width: 20px;
+}
+#box-2{
+    height: 20px;
+    width: 20px;
+}
+.a,.b{
+    display: flex;
+    gap: 10px;
+}
+.send{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 10px 20px ;
+    cursor: pointer;
+}
