@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f3ff;
+}
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 30px;
+    box-shadow:  0  10px 6px -7px #1a235a;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #b5b6c0;
+    border-radius: 100px;
+}
+.img svg{
+    height: 30px;
+}
+.basic{
+    font-size: 15px;
+    font-weight: bold;
+}
+.sec-2{
+    display: flex;
+    flex-direction: column;
+}
+.kr{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.k{
+    color: #1a235a;
+    font-size: 12px;
+}
+.num{
+    font-size: 30px;
+    font-weight: bold;
+}
+.month{
+    color: #1a235a;
+}
+.sec-3{
+    display: flex;
+    flex-direction: column;
+}
+.days{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-top: 40px;
+}
+.b-1,.b-2,.b-3,.b-4{
+    color: #1a235a;
+    background-color: white;
+    border: 2px solid #8c8d95;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.b-1:hover,.b-2:hover,.b-3:hover,.b-4:hover{
+    background-color: #1a235a;
+    color: white;
+    border: 2px solid #1a235a;
+    cursor: pointer;
+}
+.per{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+.download{
+    color: #1a235a;
+}
+.sec-4{
+    padding-top: 20px;
+}
+.sub{
+    padding: 15px 90px;
+    background-color: #1a235a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sub:hover{
+    background-color: blue;
+    cursor: pointer;
+}
