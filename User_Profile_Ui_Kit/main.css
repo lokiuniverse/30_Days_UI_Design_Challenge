@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #446392;
+}
+
+.background{
+  position: absolute;
+  background-color: #4E73AA;
+  width: 400px;
+  height: 400px;
+  z-index: -100;
+  border-radius: 50%;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.3fr 2fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr 0.3fr;
+  width: 60%;
+}
+
+.container1{
+  grid-column-start: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.container2{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container3{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+}
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  gap: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 2px #244D85;
+}
+
+.c1-top{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 5px #EBF1FC;
+}
+
+.img-con{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -13px;
+  background-color: #2C4168;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.img-con p{
+  color: white;
+  font-size: 13px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.content .head{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content .sub{
+  font-size: 12px;
+}
+
+.c1-bottom p{
+  font-size: 12px;
+}
+
+.container2{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 2px #244D85;
+  gap: 1.5rem;
+}
+
+.c2-top{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.one, .two{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.svg svg{
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 5px #EBF1FC;
+}
+
+.con{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.con p{
+  font-size: 13px;
+}
+
+.con .bold{
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.c2-bottom{
+  width: 100%;
+  background-color: #294267;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.c2-bottom a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.container3{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 2px #244D85;
+  z-index: -50;
+}
+
+.c3-left{
+  display: flex;
+  align-items: center;
+}
+
+.c3-left p{
+  font-weight: bolder;
+}
+
+.c3-right{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -30px;
+}
+
+.i1-img, .i2-img, .i3-img{
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.i1, .i2, .i3{
+  display: flex;
+}
+
+.i2{
+  position: absolute;
+  z-index: -1;
+  right: -25px;
+}
+
+.i3{
+  position: absolute;
+  z-index: -2;
+  right: -20px;
+}
+
+.i1-img{
+  border: 3px solid white;
+}
+
+.i2-img{
+  border: 3px solid white;
+}
+
+.i1-img{
+  border: 3px solid white;
+}
+
+@media screen and (max-width: 860px){
+  main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 730px){
+  main{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 625px){
+  main{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 540px){
+  main{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 485px){
+  main{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 435px){
+  main{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 365px){
+  main{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 316px){
+  main{
+    width: 80%;
+  }
+}
