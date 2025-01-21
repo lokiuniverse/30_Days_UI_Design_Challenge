@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/bg-glowing.webp);
+}
+main{
+    background-image: linear-gradient(112.5deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(195, 195, 195) 10%, rgb(0, 0, 0) 53%, rgb(0, 0, 0) 53%, rgb(0, 0, 0) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(0, 0, 0) 88%, rgb(5, 4, 4) 91%, rgb(99, 99, 99) 91%, rgb(0, 0, 0) 100%), linear-gradient(157.5deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(0, 0, 0) 88%, rgb(14, 14, 14) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
+        background-blend-mode: overlay, overlay, overlay, normal;
+        width: 320px;
+        border-radius: 0.2rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+}
+section:first-child{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-size: 2.3rem;
+        font-style: normal;
+        background: -webkit-linear-gradient(rgb(255, 149, 0), #000000, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 12px 12px rgba(48, 48, 48, 0.249);
+}
+section:nth-child(2)>div:first-child{
+    margin: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: "Brygada 1918", serif;
+    font-optical-sizing: auto;
+  
+}
+section:nth-child(2)>div:nth-child(2){
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+    padding: 1rem;
+}
+section:nth-child(2)>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+   justify-content: flex-start;
+}
+section:nth-child(2)>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+}
+section:nth-child(2)>div:nth-child(2) input {
+   width: 16px;
+   height: 16px;
+   accent-color: black;
+}
+section:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+section:last-child p{
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 12px rgb(157, 157, 157);
+}
+section:last-child p:first-child {
+   background-color: rgb(255, 149, 0);
+   color: rgb(0, 0, 0);
+}
+section:last-child p:first-child:hover {
+    background-color: rgba(0, 12, 233, 0.512);
+    color: rgb(255, 255, 255);
+}
+section:last-child p:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+section:last-child p:nth-child(2):hover {
+    background-color: rgba(233, 0, 0, 0.512);
+    color: rgb(255, 255, 255);
+}
+section:last-child p:last-child {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+section:last-child p:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.512);
+    color: rgb(0, 0, 0);
+}
