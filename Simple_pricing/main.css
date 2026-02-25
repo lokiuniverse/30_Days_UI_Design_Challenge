@@ -1,0 +1,153 @@
+/* Add CSS here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(244, 216, 239, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section{
+    background-color: white;
+    border-radius: 0.7rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.first_section{
+    box-shadow: 0px 0px 0px 11px rgba(152, 191, 246, 0.19);
+}
+.second_section{
+    box-shadow: 0px 0px 0px 11px rgba(246, 152, 245, 0.169);
+
+}
+.box_1{
+    padding: 10rem;
+    background-color: rgba(199, 223, 255, 0.44);
+    position: absolute;
+    z-index: -1;
+    top: -120px;
+    border-radius: 0.7rem;
+}
+.box_2{
+
+    padding: 9rem;
+        background-color: rgba(246, 152, 245, 0.169);
+        position: absolute;
+        z-index: -1;
+        right: -120px;
+        top: 200px;
+        border-radius: 0.7rem;
+}
+.first_section .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(137, 6, 251);
+    border: 1px solid rgba(128, 3, 253, 0.953);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    button{
+        background-color: transparent;
+        border: none;
+    }
+
+}
+.first_section .button:hover{
+    color: white;
+    background-color: rgba(128, 3, 253, 0.953);
+}
+.second_section .button{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    color: white;
+    background-color: rgb(157, 20, 102);
+    padding: 0.5rem 1.5rem;
+        border-radius: 0.3rem;
+        font-weight: 500;
+            border: 1px solid rgb(157, 20, 102);
+        button{
+            background-color: transparent;
+            border: none;
+        }
+}
+.second_section .button:hover{
+    color: black;
+    background-color: white;
+        border: 1px solid rgb(157, 20, 102);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: rgb(86, 85, 85);
+    font-weight: 600;
+}
+
+
+.content p:before{
+    content: "\2713";
+    color: green;
+    padding: 0.2rem;
+    margin-right: 0.7rem;
+    background-color: rgba(197, 254, 216, 0.723);
+    border-radius: 50%;
+    
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+.head .start{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(155, 39, 250);
+    font-weight:900;
+    font-size: 1.3rem;
+
+}
+.head .pro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(157, 20, 102);
+        font-weight: 900;
+        font-size: 1.3rem;
+
+}
+@media only screen and (max-width: 700px){
+    body{
+        height: 140vh;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+        .box_2 {
+    
+            padding: 9rem;
+            background-color: rgba(246, 152, 245, 0.169);
+            position: absolute;
+            z-index: -1;
+            top: 600px;
+            left: 0;
+            height: 340px;
+            width: 280px;
+            border-radius: 0.7rem;
+        }
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation CSS and JavaScript</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p id="currDate"> </p>
+        <p>Enter the DOB badri in format : (MM/DD/YYYY)</p>
+        <input type="text" placeholder="Enter your D.O.B" id="DOB">
+        <button id="CalcAge">Age</button>
+    </div>
+  <div id="displayAge">
+      <p id="age"></p>
+    <script>
+        let currDate= document.getElementById("currDate");
+        let dateOfBirth = document.querySelector("#DOB");
+        const CalcAge= document.getElementById("CalcAge");
+        const displayAge= document.getElementById("displayAge");
+        const Age= document.getElementById("age");
+        var today = new Date();
+        currDate.innerText=`Today's Date is : ${today.toLocaleDateString('en-US')}`;
+
+        CalcAge.addEventListener("click",()=>{
+        var birthDate = new Date(dateOfBirth.value);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
+        }
+       displayAge.style.visibility="visible";
+       Age.innerText=`You are ${age} years old.`
+       });
+    </script>
+</body>
+</html>

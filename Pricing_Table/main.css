@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 86);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top right,rgb(177, 247, 247),rgb(244, 244, 192));
+}
+main{
+    display: flex;
+    gap: 2rem;
+    padding: 50px;
+    border-radius: 25px;
+    backface-visibility: visible;
+    border: 10px solid white;
+
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.stage{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cost{
+    font-weight: bold;
+    font-size: 20px;
+}
+.per{
+    font-size: 14px;
+    
+}
+.for{
+    line-height: 1.5rem;
+}
+.method{
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.purple{
+    border: none;
+    background-color: rgb(247, 181, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+.purple:hover{
+    transition: 0.2s;
+    background-color: rgb(247, 204, 250);
+}
+.aqua{
+    border: none;
+    background-color: rgb(181, 240, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+.aqua:hover{
+    transition: 0.2s;
+    background-color: rgb(214, 250, 250);
+}
+.orange{
+    border: none;
+    background-color: rgb(244, 213, 146);
+    padding: 10px;
+    border-radius: 10px;
+}
+.orange:hover{
+    transition: 0.2s;
+    background-color: rgb(254, 236, 202);
+}
+@media only screen and (max-width: 730px){
+    main{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 690px) {
+    main{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        gap: 1rem;
+    }
+    body{
+        height: 140vh;
+    }
+    .plan{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .for{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

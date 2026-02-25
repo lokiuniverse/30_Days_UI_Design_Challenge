@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+main{
+    display:grid;
+    grid-template-columns: 1.2fr 0.2fr 1fr;
+    grid-template-rows: 0.9fr 0.9fr 0.1fr;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://c1.wallpaperflare.com/preview/181/175/741/macro-sand-black-blurred.jpg);
+    background-repeat: repeat;
+    border:2px solid;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.sec-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.sec-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: black;
+    gap: 2rem;
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+}
+.log-use-google{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+}
+.log-use-google a{
+    text-decoration: none;
+}
+.link{
+    display: flex;
+    align-items: center;
+}
+.log{
+    font-size: 18px;
+    color: white;
+}
+.google-link {
+    display: flex;
+    text-decoration: none;
+    background-color:rgb(28, 110, 251);
+    color: white;
+    padding: 10px ;
+    border-radius: 5px;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+.line{
+    height: 1px;
+    width: 100px;
+    background-color: rgb(145, 145, 145);
+}
+.or{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 0.3rem;
+}
+.enter-yours{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#in-email{
+    color: white;
+}
+#email{
+    padding: 10px 30px 10px 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(132, 130, 130);
+    border-radius: 5px;
+    width: 90%;
+}
+.continue{
+    text-align: center;
+    border: none;
+    background-color: azure;  
+    padding: 10px 75px;
+    border-radius: 5px;
+    width: 90%;
+}
+.create{
+    color: white;
+}
+.create a{
+    text-decoration: none;
+}
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.seamless{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.offload{
+    color: white;
+}
+@media only screen and (max-width:513px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+    body{
+        height: 120vh;
+        width: 120vw;
+    }
+}
